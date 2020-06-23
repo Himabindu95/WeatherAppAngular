@@ -6,3 +6,5 @@ Desktop: https://www.youtube.com/watch?v=0wKAHhz6tEM
 Mobile: https://www.youtube.com/watch?v=mLl1y_MmCpI
 
 Note: Node modules, build and config file haven't been uploaded since they may vary with each Angular release. Only app components have been uploaded.
+
+Copyright: This app was built as a part of CSCI 571 course at USC taught by Professor Marco Papa
