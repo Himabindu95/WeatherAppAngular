@@ -25,8 +25,8 @@ app.all("/*", function(req, res, next) {
 app.get('/api/cityAutoComplete', (req, res) => {
   var cityObj = req.body;
   var city = req.query.city;
-  console.log('https://maps.googleapis.com/maps/api/place/autocomplete/json?input='+city+'&types=(cities)&language=en&key=AIzaSyCMwfBJVkLqZH_BXiH1hW4o5CPwMJZAQ3E');
-  request('https://maps.googleapis.com/maps/api/place/autocomplete/json?input='+city+'&types=(cities)&language=en&key=AIzaSyCMwfBJVkLqZH_BXiH1hW4o5CPwMJZAQ3E', function(error, response, body){
+  console.log('https://maps.googleapis.com/maps/api/place/autocomplete/json?input='+city+'&types=(cities)&language=en&key=<YOUR_GOOGLE_API_KEY>');
+  request('https://maps.googleapis.com/maps/api/place/autocomplete/json?input='+city+'&types=(cities)&language=en&key=<YOUR_GOOGLE_API_KEY>', function(error, response, body){
      res.json(response.body);
   });
 });
@@ -37,8 +37,8 @@ app.get('/api/searchResults', (req,res) => {
   var street = req.query.q1;
   var city = req.query.q2;
   var state = req.query.q3;
-  console.log('https://maps.googleapis.com/maps/api/geocode/json?address='+street+','+city+','+state+'&key=AIzaSyDM_OAxmPyyZmuMuvqjmx5yZfu5irlziQk');
-  request('https://maps.googleapis.com/maps/api/geocode/json?address='+street+','+city+','+state+'&key=AIzaSyDM_OAxmPyyZmuMuvqjmx5yZfu5irlziQk', function(error, response, body){
+  console.log('https://maps.googleapis.com/maps/api/geocode/json?address='+street+','+city+','+state+'&key=<YOUR_GOOGLE_API_KEY>');
+  request('https://maps.googleapis.com/maps/api/geocode/json?address='+street+','+city+','+state+'&key=<YOUR_GOOGLE_API_KEY>', function(error, response, body){
     res.json(response.body);
  });
 });
@@ -58,8 +58,8 @@ app.get('/api/currentWeather', (req,res) =>{
 app.get('/api/stateSeal', (req,res) =>{
   var state = req.query.state;
   console.log(state);
-  console.log('https://www.googleapis.com/customsearch/v1?q='+state+'%20State%20Seal&cx=007310180503979522556:afldbckvcur&imgSize=huge&imgType=news&num=1&searchType=image&key=AIzaSyA394rvqJFKbRwllCkRuywWGnbgodyp0BE');
-  request('https://www.googleapis.com/customsearch/v1?q='+state+'%20State%20Seal&cx=007310180503979522556:afldbckvcur&imgSize=huge&imgType=news&num=1&searchType=image&key=AIzaSyA394rvqJFKbRwllCkRuywWGnbgodyp0BE', function(error, response, body){
+  console.log('https://www.googleapis.com/customsearch/v1?q='+state+'%20State%20Seal&cx=007310180503979522556:afldbckvcur&imgSize=huge&imgType=news&num=1&searchType=image&key=<YOUR_GOOGLE_API_KEY>');
+  request('https://www.googleapis.com/customsearch/v1?q='+state+'%20State%20Seal&cx=007310180503979522556:afldbckvcur&imgSize=huge&imgType=news&num=1&searchType=image&key=<YOUR_GOOGLE_API_KEY>', function(error, response, body){
     //res.json(response.body);
     res.json(response.body);
  });
