@@ -1,0 +1,234 @@
+.weather-container{
+  background-color: #6D91A9;
+  box-shadow: 4px 4px 5px 0px #5d5b5b;
+}
+.req-star{
+  color:red;
+}
+#city::placeholder{
+  color: #73777a !important;
+}
+.btn-color{
+  color: gray;
+}
+.states{
+  color: black;
+}
+.dropdown-toggle::after{
+  color: black;
+}
+.form-icons{
+  vertical-align: -6px;
+}
+.hide-autocomplete { display: none; }
+.current-weather{
+  background-color: #A5D0F0;
+  margin: 0 auto;
+  width: 50%;
+}
+.results {
+  background-color: #6D91A9;
+  color: white;
+}
+.favorites{
+  background-color: white;
+  color: gray;
+}
+dt::after{
+  content: " ";
+}
+.tableheading{
+  background-color: #6D91A9 !important;
+}
+.tablerow:nth-child(even){
+  background-color: #6D91A9 !important;
+}
+.tablerow:nth-child(odd){
+  background-color: #A5D0F0 !important;
+}
+.tooltip-black{
+  background-color: black;
+  color: white;
+}
+.nav-tabs .nav-item {
+  display: inline-block;
+}
+.float-right{
+  float: right !important;
+}
+
+.star-link{
+  width: 40px;
+  margin-left: 10px;
+}
+.weatherForm{
+  margin: 0 auto;
+  width: calc(100% - 20px);
+}
+@media (max-width: 350px) {
+  .nav-tabs .nav-link{
+    padding: 0.5rem;
+  }
+  .title{
+    font-size: 2rem;
+  }
+ }
+ .nav-tabs .fav-button, .nav-tabs .twitter-share-button{
+  padding: 5.5px;
+    background-color: #f4f4f4;
+    border: none;
+    /* margin-top: 3px; */
+    text-align: center;
+}
+.fav-button i{
+  width: 25px;
+}
+@media (max-width: 768px) {
+  .current-weather{
+    background-color: #A5D0F0;
+    margin: 0 auto;
+    width: 70%;
+  }
+ }
+ @media only screen and (max-width: 767px) {
+  .current-weather{
+    background-color: #A5D0F0;
+    margin: 0 auto;
+    width: calc(100% - 20px);
+    padding: 0 10px;
+  }
+  .current-weather .city-value{
+    font-size: 1.25rem;
+  }
+  .current-weather .timezone{
+    font-size: 1rem;
+  }
+  .current-weather .temperature{
+    font-size: 1.75rem;
+  }
+  .current-weather .summary{
+    font-size: 1.25rem;
+  }
+ }
+ /*@media (min-width: 768px) {
+  .current-weather{
+    background-color: #A5D0F0;
+    margin: 0 auto;
+    width: 80%;
+  }
+ }*/
+ @media (max-width: 1023px) and (min-width: 768px) {
+  .current-weather{
+    background-color: #A5D0F0;
+    margin: 0 auto;
+    width: 70%;
+  }
+ }
+ @media (min-width: 1024px) {
+  .current-weather{
+    background-color: #A5D0F0;
+    margin: 0 auto;
+    width: 70%;
+  }
+ }
+ #chartContainer {
+  width: 100%;
+  height: 370px;
+  /* display: flex; */
+ }
+ /* #chartContainer{
+  height: 370px;
+  width: 100%;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+ } */
+ /* #chartContainer .canvasjs-chart-container{
+  display: flex;
+  align-items: center;
+justify-content: center;
+transform: translate3d(-50%, -50%, 0);
+ } */
+ .lists{
+  padding-left: 50%;
+  margin-bottom: 0;
+ }
+ .fav-table{
+   margin: 0 auto;
+   width: 80%;
+ }
+ #temp {
+   padding-top: 4%;
+ }
+ @media (max-width: 767px){
+  .lists{
+    padding-left: 0;
+  }
+  .fav-table{
+    width: 100%;
+  }
+  .form-inline label{
+    display: inline-block;
+  }
+  .modal-city {
+    font-size: 1.25rem;
+  }
+}
+ @media (min-width: 768px){
+  .form-inline label{
+    margin-left: 50px;
+    justify-content: left;
+  }
+  .form-check-input{
+    margin-left: 2rem;
+  }
+  .buttons-div{
+    padding-left: 3.75rem;
+  }
+  .form-check-label{
+    margin-left: 3rem;
+  }
+  .error-wrapper{
+    margin-left: 14.5rem;
+  }
+  .error-wrapper span{
+    display: block;
+  }
+
+  #chartContainer {
+    /* //justify-content: center; */
+    /* transform: translateX(-25%); */
+  }
+  #chartContainer.chart-loaded {
+    /* transform: translateX(-50%); */
+  }
+
+ }
+@media (min-width: 992px) {
+  .form-inline label{
+    margin-left: 100px;
+  }
+  .form-check{
+    margin-left: 3rem;
+  }
+
+  .buttons-div{
+    padding-left: 6.75rem;
+  }
+}
+@media (max-width: 374px) {
+  .seal{
+    width: 100px;
+    height: 100px;
+  }
+  .current-weather > .row {
+    align-items: center;
+  }
+}
+@media (max-width: 767px) and (min-width: 375px){
+  .seal{
+    width: 125px;
+    height: 125px;
+    margin-top: -10px;
+  }
+}
